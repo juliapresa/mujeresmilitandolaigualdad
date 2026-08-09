@@ -1,12 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mujeres militando la igualdad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mujeres Militando la Igualdad — Camino a la democracia paritaria</title>
+<meta name="description" content="Colectivo de mujeres diversas impulsando la democracia paritaria en Uruguay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  function setNavHeight(){
+    var nav = document.querySelector('.nav');
+    if(nav){ document.documentElement.style.setProperty('--nav-h', nav.offsetHeight + 'px'); }
+  }
+  window.addEventListener('DOMContentLoaded', setNavHeight);
+  window.addEventListener('resize', setNavHeight);
+</script>
 </head>
 <body>
-    <h1>PRÓXIMAMENTE</h1>
-    
+
+<!-- ===== SVG SPRITE (dibujitos reutilizables) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ico-fist" viewBox="0 0 64 64">
+      <rect x="18" y="30" width="30" height="26" rx="6" fill="currentColor"/>
+      <rect x="14" y="18" width="10" height="18" rx="4" fill="currentColor"/>
+      <rect x="24" y="14" width="10" height="20" rx="4" fill="currentColor"/>
+      <rect x="34" y="14" width="10" height="20" rx="4" fill="currentColor"/>
+      <rect x="44" y="16" width="10" height="20" rx="4" fill="currentColor"/>
+      <rect x="10" y="34" width="10" height="14" rx="4" fill="currentColor"/>
+      <rect x="21" y="44" width="8" height="16" rx="3" fill="currentColor"/>
+    </symbol>
+    <symbol id="ico-megaphone" viewBox="0 0 64 64">
+      <path d="M10 26 L34 12 V52 L10 38 Z" fill="currentColor"/>
+      <rect x="4" y="24" width="8" height="16" rx="2" fill="currentColor"/>
+      <path d="M34 16 L54 10 V54 L34 48 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M14 40 L18 54 H26 L22 38" fill="currentColor"/>
+      <path d="M40 6 Q46 8 46 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path d="M46 2 Q54 6 54 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ico-scale" viewBox="0 0 64 64">
+      <rect x="30" y="6" width="4" height="46" fill="currentColor"/>
+      <rect x="14" y="52" width="36" height="5" rx="2" fill="currentColor"/>
+      <line x1="10" y1="16" x2="54" y2="16" stroke="currentColor" stroke-width="3"/>
+      <circle cx="10" cy="16" r="3" fill="currentColor"/>
+      <circle cx="54" cy="16" r="3" fill="currentColor"/>
+      <path d="M2 28 Q10 40 18 28 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M46 28 Q54 40 62 28 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+      <line x1="2" y1="28" x2="18" y2="28" stroke="currentColor" stroke-width="3"/>
+      <line x1="46" y1="28" x2="62" y2="28" stroke="currentColor" stroke-width="3"/>
+      <line x1="10" y1="16" x2="10" y2="28" stroke="currentColor" stroke-width="3"/>
+      <line x1="54" y1="16" x2="54" y2="28" stroke="currentColor" stroke-width="3"/>
+    </symbol>
+    <symbol id="ico-bubble" viewBox="0 0 64 64">
+      <rect x="6" y="10" width="52" height="34" rx="10" fill="currentColor"/>
+      <path d="M18 44 L18 56 L30 44 Z" fill="currentColor"/>
+      <circle cx="20" cy="27" r="3.4" fill="var(--paper,#fff)"/>
+      <circle cx="32" cy="27" r="3.4" fill="var(--paper,#fff)"/>
+      <circle cx="44" cy="27" r="3.4" fill="var(--paper,#fff)"/>
+    </symbol>
+    <symbol id="ico-people" viewBox="0 0 200 160">
+      <circle cx="40" cy="120" r="30" fill="#FF3131"/>
+      <circle cx="150" cy="30" r="26" fill="#9440DD"/>
+      <rect x="18" y="46" width="44" height="66" rx="20" fill="#0A0A0A"/>
+      <circle cx="40" cy="34" r="20" fill="#F4C9A8"/>
+      <rect x="112" y="60" width="44" height="70" rx="20" fill="#FFFFFF"/>
+      <circle cx="134" cy="48" r="19" fill="#E8A87C"/>
+      <rect x="60" y="70" width="40" height="66" rx="18" fill="#FF3131"/>
+      <circle cx="80" cy="58" r="18" fill="#F4C9A8"/>
+      <rect x="76" y="14" width="8" height="46" fill="#0A0A0A"/>
+      <rect x="72" y="6" width="16" height="12" rx="2" fill="#0A0A0A"/>
+      <rect x="122" y="12" width="10" height="40" rx="4" fill="#9440DD" transform="rotate(-18 122 12)"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="wrap">
+    <div class="wordmark">
+      <span>Mujeres</span>
+      <span>Militando la</span>
+      <span class="accent">Igualdad</span>
+    </div>
+    <a href="#sumate" class="nav-cta">Sumate</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap">
+    <h1>Camino a la <em>democracia paritaria</em> en Uruguay</h1>
+    <p class="hero-sub">Mujeres militando la igualdad</p>
+    <div class="hero-actions">
+      <a href="#sumate" class="btn btn-solid">Sumate</a>
+      <a href="#quienes" class="btn btn-line">¿Quiénes somos?</a>
+    </div>
+  </div>
+  <div class="hero-illus ground-shadow"><img src="assets/grupo.png" alt=""></div>
+</header>
+
+<!-- ===== QUIENES SOMOS ===== -->
+<section class="section-paper" id="quienes">
+  <div class="wrap quienes">
+    <div>
+      <div class="eyebrow"><svg style="color:var(--red-deep)"><use href="#ico-fist"/></svg></div>
+      <h2 class="section-title">¿Quiénes somos?</h2>
+      <p>Somos un colectivo de mujeres diversas: militantes feministas, militantes de izquierda, militantes feministas de izquierda, y militantes sociales que nos juntamos para impulsar las transformaciones necesarias para que la paridad política sea una realidad en Uruguay.</p>
+      <p class="callout">No representamos ninguna institución o partido político existente. Actuamos de forma independiente de las estructuras políticas como forma de garantizar nuestro camino.</p>
+    </div>
+    <div class="quienes-art ground-shadow"><img src="assets/puño_rosado.png" alt="Ilustración de una mujer levantando el puño con fuerza"></div>
+  </div>
+</section>
+
+<!-- ===== HACIA DONDE VAMOS ===== -->
+<section class="section-red-bright" id="meta">
+  <div class="wrap meta-grid">
+    <div class="meta-copy">
+      <div class="eyebrow"><svg><use href="#ico-scale"/></svg></div>
+      <h2 class="section-title">¿Hacia dónde vamos?</h2>
+      <p>Caminamos hacia una democracia paritaria, donde la representación de la sociedad sea verdaderamente equitativa.</p>
+    </div>
+    <div class="meta-art ground-shadow"><img src="assets/manos.png" alt="Ilustración de dos manos que se alcanzan"></div>
+  </div>
+</section>
+
+<!-- ===== QUE QUEREMOS ===== -->
+<section class="section-paper" id="queremos">
+  <div class="sticker sticker-duo-a ground-shadow"><img src="assets/duo-uno.png" alt=""></div>
+  <div class="sticker sticker-duo-b ground-shadow"><img src="assets/duo-dos.png" alt=""></div>
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--red-deep)"><svg><use href="#ico-scale"/></svg></div>
+    <h2 class="section-title" style="color:var(--black)">¿Qué queremos?</h2>
+    <p class="want-intro">Queremos ser protagonistas de la historia, de toda la historia, nuestra historia.</p>
+
+    <div class="cards">
+      <div class="card card-outline">
+        <div class="card-icon-wrap"><svg class="card-icon" style="color:var(--red-deep)"><use href="#ico-fist"/></svg></div>
+        <p>Queremos impulsar un proceso de reforma político-electoral para garantizar la participación política de las mujeres en lugares de poder dentro del Estado.</p>
+      </div>
+
+      <div class="card card-wide card-fill-red">
+        <div class="card-icon-wrap"><svg class="card-icon" style="color:var(--white)"><use href="#ico-scale"/></svg></div>
+        <p>Paridad en los tres poderes del Estado. Paridad en los tres niveles de gobierno: nacional, departamental y municipal. Paridad en los entes autónomos y oficinas dependientes de Presidencia de la República.</p>
+      </div>
+
+      <div class="card card-fill-purple">
+        <div class="card-icon-wrap"><svg class="card-icon" style="color:var(--white)"><use href="#ico-bubble"/></svg></div>
+        <p>Queremos conversar sobre política, sobre los temas que nos preocupan y ocupan.</p>
+      </div>
+
+      <div class="card card-outline">
+        <div class="card-icon-wrap"><svg class="card-icon" style="color:var(--purple)"><use href="#ico-people"/></svg></div>
+        <p>Queremos conformar una amplia articulación con mujeres de todos los partidos políticos interesadas en alcanzar la paridad política.</p>
+      </div>
+
+      <div class="card card-fill-red-bright">
+        <div class="card-icon-wrap"><svg class="card-icon" style="color:var(--white)"><use href="#ico-megaphone"/></svg></div>
+        <p>Queremos la mitad del poder, para transformar las políticas públicas desde una mirada de género garantizando que nada ni nadie quede por fuera.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SUMATE ===== -->
+<section class="section-purple" id="sumate">
+  <div class="sticker sticker-badge ground-shadow"><img src="assets/puños_cuadrado.png" alt=""></div>
+  <div class="wrap join">
+    <div>
+      <div class="eyebrow"><svg><use href="#ico-megaphone"/></svg></div>
+      <h2 class="section-title">¿Querés ser parte de este movimiento de mujeres?</h2>
+      <p>Podés sumarte al nodo de Mujeres militando la igualdad de tu departamento o localidad. Para ello podés escribirnos al 091 060 016 o enviarnos un mail a mujeresmilitandolaigualdad@gmail.com</p>
+      <div class="contact-list">
+        <a class="contact-pill" href="tel:+59891060016">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          091 060 016
+        </a>
+        <a class="contact-pill" href="mailto:mujeresmilitandolaigualdad@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          mujeresmilitandolaigualdad@gmail.com
+        </a>
+      </div>
+    </div>
+    <div class="join-art ground-shadow"><img src="assets/puño_grupo.png" alt="Ilustración de mujeres con los puños en alto"></div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <h2 class="tagline">La <em>paridad</em> la construimos entre todas</h2>
+    <div class="footer-illus-row">
+      <div class="ground-shadow"><img src="assets/puño_rojo.png" alt=""></div>
+      <svg><use href="#ico-scale"/></svg>
+      <div class="ground-shadow"><img src="assets/puño_violeta.png" alt=""></div>
+    </div>
+    <div class="footer-meta">
+      <span>Mujeres Militando la Igualdad · Uruguay</span>
+      <span>091 060 016 · mujeresmilitandolaigualdad@gmail.com</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
