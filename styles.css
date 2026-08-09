@@ -114,7 +114,7 @@ img,svg{display:block;max-width:100%;}
 }
 .hero h1 em{
   font-style:normal;
-  color:var(--black);
+  color:var(--white);
 }
 .hero-sub{
   margin-top:22px;
