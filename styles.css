@@ -90,6 +90,19 @@ img,svg{display:block;max-width:100%;}
 }
 .nav-cta:hover{background:var(--purple); transform:translateY(-1px);}
 
+.nav-cta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* ajustá según el padding de tu .nav-cta actual */
+}
+
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap:10px; /* achicá o agrandá esto a gusto */
+}
+
 /* ---------- HERO ---------- */
 .hero{
   position:relative;
