@@ -131,12 +131,8 @@ img,svg{display:block;max-width:100%;}
   color:var(--white);
 }
 .h1-sub{
-  margin-top:18px;
-  font-family:'Anton',sans-serif;
-  text-transform:uppercase;
-  font-size:clamp(40px, 2.4vw, 20px);
-  letter-spacing:0.02em;
-  color:var(--white);
+  font-size:clamp(40px, 7.4vw, 62px);
+  max-width:20ch;
 }
 .hero-sub{
   margin-top:22px;
